@@ -23,7 +23,8 @@
 
 When the game have loaded up to the main-menu a Ding is heard.
 The sound can be changed by replacing the audio-file in the Sounds Directory.
-For those who might do something else while the game loads.
+For those with long mod-lists who might do something else while the game loads.
+Idea by: Rasutei
 
 [table]
     [tr]

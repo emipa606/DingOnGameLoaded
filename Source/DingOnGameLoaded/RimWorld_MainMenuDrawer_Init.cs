@@ -5,13 +5,13 @@ using Verse.Sound;
 
 namespace DingOnGameLoaded
 {
-    [HarmonyPatch(typeof(MainMenuDrawer), "Init")]
-    public static class RimWorld_MainMenuDrawer_Init
+    [HarmonyPatch(typeof(MainMenuDrawer), "MainMenuOnGUI")]
+    public static class RimWorld_MainMenuDrawer_MainMenuOnGUI
     {
         private static bool playedOnce;
 
         [HarmonyPostfix]
-        public static void Init()
+        public static void MainMenuOnGUI()
         {
             if (playedOnce)
             {
