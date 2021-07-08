@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Ding On Game Loaded</name>
   <packageId>Mlie.DingOnGameLoaded</packageId>
@@ -7,6 +7,7 @@
   <supportedVersions>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -24,6 +25,9 @@
 When the game have loaded up to the main-menu a Ding is heard.
 The sound can be changed by replacing the audio-file in the Sounds Directory.
 For those with long mod-lists who might do something else while the game loads.
+
+Known issue: If the option &quot;Run in background&quot; is turned off and the mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999454301]BetterLoading[/url] is active the sound will be a bit early. This is because that mod adds a few steps after the vanilla loading is complete and since the main-menu is not generated if the background-option is turned off and the game is minimized the sound will play at stage 10 of the loading.
+
 Idea by: Rasutei
 
 [table]
