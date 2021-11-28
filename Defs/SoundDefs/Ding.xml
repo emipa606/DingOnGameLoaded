@@ -19,4 +19,42 @@
       </li>
     </subSounds>
   </SoundDef>
+  <SoundDef>
+    <defName>WarningOnGameLoaded</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Warning</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>45</min>
+          <max>45</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ErrorOnGameLoaded</defName>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Error</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>45</min>
+          <max>45</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
 </Defs>

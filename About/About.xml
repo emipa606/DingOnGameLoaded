@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Ding On Game Loaded</name>
   <packageId>Mlie.DingOnGameLoaded</packageId>
@@ -20,13 +20,13 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 
 When the game have loaded up to the main-menu a Ding is heard.
 The sound can be changed by replacing the audio-file in the Sounds Directory.
 For those with long mod-lists who might do something else while the game loads.
 
-Known issue: If the option &quot;Run in background&quot; is turned off and the mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999454301]BetterLoading[/url] is active the sound will be a bit early. This is because that mod adds a few steps after the vanilla loading is complete and since the main-menu is not generated if the background-option is turned off and the game is minimized the sound will play at stage 10 of the loading.
+Known issue: If the option "Run in background" is turned off and the mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999454301]BetterLoading[/url] is active the sound will be a bit early. This is because that mod adds a few steps after the vanilla loading is complete and since the main-menu is not generated if the background-option is turned off and the game is minimized the sound will play at stage 10 of the loading.
 
 Idea by: Rasutei
 
@@ -37,7 +37,12 @@ Idea by: Rasutei
     [/tr]
 [/table]
 	
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/O0IIlYj.png[/img]
+Since modding is just a hobby for me I expect no donations to keep modding. If you still want to show your support you can gift me anything from my [url=https://store.steampowered.com/wishlist/id/Mlie]Wishlist[/url] or buy me a cup of tea.
+
+[url=https://ko-fi.com/G2G55DDYD][img]https://i.imgur.com/Utx6OIH.png[/img][/url]
+
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
