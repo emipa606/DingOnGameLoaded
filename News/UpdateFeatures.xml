@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
-		<modNameReadable>DingOnGameLoaded</modNameReadable>
-		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2425530959</linkUrl>
-	</HugsLib.UpdateFeatureDef>
-	<HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
-		<defName>DingOnGameLoaded_1_0_4_0</defName>
-		<assemblyVersion>1.0.4.0</assemblyVersion>
-		<content>Since it was requested it is now possible to have different sounds played if there were warnings or errors during startup.</content>
-	</HugsLib.UpdateFeatureDef>
+  <HugsLib.UpdateFeatureDef Abstract="true" Name="UpdateFeatureBase">
+    <modNameReadable>DingOnGameLoaded</modNameReadable>
+    <linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2425530959</linkUrl>
+  </HugsLib.UpdateFeatureDef>
+  <HugsLib.UpdateFeatureDef ParentName="UpdateFeatureBase">
+    <defName>DingOnGameLoaded_1_0_4_0</defName>
+    <assemblyVersion>1.0.4.0</assemblyVersion>
+    <content>Since it was requested it is now possible to have different sounds played if there were warnings or errors during startup.</content>
+  </HugsLib.UpdateFeatureDef>
 </Defs>
-

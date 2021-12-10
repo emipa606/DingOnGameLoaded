@@ -16,7 +16,7 @@ internal class DingOnGameLoadedSettings : ModSettings
     public override void ExposeData()
     {
         base.ExposeData();
-        Scribe_Values.Look(ref StartupWarnings, "StartupWarnings", true);
-        Scribe_Values.Look(ref StartupErrors, "StartupErrors", true);
+        Scribe_Values.Look(ref StartupWarnings, "StartupWarnings");
+        Scribe_Values.Look(ref StartupErrors, "StartupErrors");
     }
 }

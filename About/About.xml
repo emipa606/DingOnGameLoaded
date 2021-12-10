@@ -26,6 +26,8 @@ When the game have loaded up to the main-menu a Ding is heard.
 The sound can be changed by replacing the audio-file in the Sounds Directory.
 For those with long mod-lists who might do something else while the game loads.
 
+Added options for making different sounds if there were warnings or errors during loading. 
+
 Known issue: If the option "Run in background" is turned off and the mod [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1999454301]BetterLoading[/url] is active the sound will be a bit early. This is because that mod adds a few steps after the vanilla loading is complete and since the main-menu is not generated if the background-option is turned off and the game is minimized the sound will play at stage 10 of the loading.
 
 Idea by: Rasutei

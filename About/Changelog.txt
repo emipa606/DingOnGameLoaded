@@ -1,5 +1,8 @@
 # Changelog for DingOnGameLoaded
 
+1.0.5.0 - Set the extra sounds as not enabled by default
+
+
 1.0.4.0 - Added options for different sounds if there were warnings or errors during startup.
 Also unpatches the harmony code after the sound has been played to minimize impact on performance.
 
