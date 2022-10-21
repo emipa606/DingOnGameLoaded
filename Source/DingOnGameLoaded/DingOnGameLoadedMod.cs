@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Mlie;
+using UnityEngine;
 using Verse;
 
 namespace DingOnGameLoaded;
@@ -10,6 +11,8 @@ internal class DingOnGameLoadedMod : Mod
     ///     The instance of the dingOnGameLoadedSettings to be read by the mod
     /// </summary>
     public static DingOnGameLoadedMod instance;
+
+    private static string currentVersion;
 
     /// <summary>
     ///     The private dingOnGameLoadedSettings
@@ -23,6 +26,9 @@ internal class DingOnGameLoadedMod : Mod
     public DingOnGameLoadedMod(ModContentPack content) : base(content)
     {
         instance = this;
+        currentVersion =
+            VersionFromManifest.GetVersionFromModMetaData(
+                ModLister.GetActiveModWithIdentifier("Mlie.DingOnGameLoaded"));
     }
 
     /// <summary>
@@ -61,11 +67,19 @@ internal class DingOnGameLoadedMod : Mod
         var listing_Standard = new Listing_Standard();
         listing_Standard.Begin(rect);
         listing_Standard.Gap();
-        listing_Standard.CheckboxLabeled("Different sound on startup-warnings",
+        listing_Standard.CheckboxLabeled("DOGL.StartupWarning".Translate(),
             ref DingOnGameLoadedSettings.StartupWarnings,
-            "Will play a different sound on warnings during startup, will also open the log to show them");
-        listing_Standard.CheckboxLabeled("Different sound on startup-errors",
-            ref DingOnGameLoadedSettings.StartupErrors, "Will play a different sound on errors during startup");
+            "DOGL.StartupWarningInfo".Translate());
+        listing_Standard.CheckboxLabeled("DOGL.StartupError".Translate(),
+            ref DingOnGameLoadedSettings.StartupErrors, "DOGL.StartupErrorInfo".Translate());
+        if (currentVersion != null)
+        {
+            listing_Standard.Gap();
+            GUI.contentColor = Color.gray;
+            listing_Standard.Label("DOGL.CurrentModVersion".Translate(currentVersion));
+            GUI.contentColor = Color.white;
+        }
+
         listing_Standard.End();
         DingOnGameLoadedSettings.Write();
     }

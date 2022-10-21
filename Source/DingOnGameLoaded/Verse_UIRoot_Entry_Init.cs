@@ -21,7 +21,7 @@ public static class Verse_UIRoot_Entry_Init
         if (ModLister.GetActiveModWithIdentifier("me.samboycoding.betterloading") != null)
         {
             Log.Message(
-                "[DingOnGameLoaded]: Better loading is active and run in background is turned off, sound will be a bit early");
+                $"[DingOnGameLoaded]: {"DOGL.StartupInfo".Translate()}");
         }
 
         //Log.Message("[DingOnGameLoaded]: Run in background is turned off");
