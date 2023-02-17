@@ -15,38 +15,21 @@ internal class DingOnGameLoadedMod : Mod
     private static string currentVersion;
 
     /// <summary>
-    ///     The private dingOnGameLoadedSettings
-    /// </summary>
-    private DingOnGameLoadedSettings dingOnGameLoadedSettings;
-
-    /// <summary>
     ///     Constructor
     /// </summary>
     /// <param name="content"></param>
     public DingOnGameLoadedMod(ModContentPack content) : base(content)
     {
         instance = this;
+        DingOnGameLoadedSettings = GetSettings<DingOnGameLoadedSettings>();
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(
-                ModLister.GetActiveModWithIdentifier("Mlie.DingOnGameLoaded"));
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
     /// <summary>
     ///     The instance-dingOnGameLoadedSettings for the mod
     /// </summary>
-    internal DingOnGameLoadedSettings DingOnGameLoadedSettings
-    {
-        get
-        {
-            if (dingOnGameLoadedSettings == null)
-            {
-                dingOnGameLoadedSettings = GetSettings<DingOnGameLoadedSettings>();
-            }
-
-            return dingOnGameLoadedSettings;
-        }
-        set => dingOnGameLoadedSettings = value;
-    }
+    internal DingOnGameLoadedSettings DingOnGameLoadedSettings { get; }
 
     /// <summary>
     ///     The title for the mod-dingOnGameLoadedSettings
@@ -81,6 +64,5 @@ internal class DingOnGameLoadedMod : Mod
         }
 
         listing_Standard.End();
-        DingOnGameLoadedSettings.Write();
     }
 }
