@@ -1,5 +1,8 @@
 # Changelog for DingOnGameLoaded
 
+1.4.3 - Lowered the volume of some sounds a bit
+
+
 1.4.2 - Better save-compatibility, thanks Taranchuk
 
 

@@ -13,8 +13,8 @@
           </li>
         </grains>
         <volumeRange>
-          <min>45</min>
-          <max>45</max>
+          <min>35</min>
+          <max>35</max>
         </volumeRange>
       </li>
     </subSounds>
@@ -32,8 +32,8 @@
           </li>
         </grains>
         <volumeRange>
-          <min>45</min>
-          <max>45</max>
+          <min>35</min>
+          <max>35</max>
         </volumeRange>
       </li>
     </subSounds>
@@ -51,8 +51,8 @@
           </li>
         </grains>
         <volumeRange>
-          <min>45</min>
-          <max>45</max>
+          <min>15</min>
+          <max>15</max>
         </volumeRange>
       </li>
     </subSounds>
