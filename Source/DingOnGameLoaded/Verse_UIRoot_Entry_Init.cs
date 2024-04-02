@@ -3,7 +3,7 @@ using Verse;
 
 namespace DingOnGameLoaded;
 
-[HarmonyPatch(typeof(UIRoot_Entry), "Init")]
+[HarmonyPatch(typeof(UIRoot_Entry), nameof(UIRoot_Entry.Init))]
 public static class Verse_UIRoot_Entry_Init
 {
     /// <summary>

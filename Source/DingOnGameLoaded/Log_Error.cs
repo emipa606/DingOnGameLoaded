@@ -3,7 +3,7 @@ using Verse;
 
 namespace DingOnGameLoaded;
 
-[HarmonyPatch(typeof(Log), "Error", typeof(string))]
+[HarmonyPatch(typeof(Log), nameof(Log.Error), typeof(string))]
 public static class Log_Error
 {
     /// <summary>

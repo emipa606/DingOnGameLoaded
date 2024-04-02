@@ -3,7 +3,7 @@ using RimWorld;
 
 namespace DingOnGameLoaded;
 
-[HarmonyPatch(typeof(MainMenuDrawer), "MainMenuOnGUI")]
+[HarmonyPatch(typeof(MainMenuDrawer), nameof(MainMenuDrawer.MainMenuOnGUI))]
 public static class RimWorld_MainMenuDrawer_MainMenuOnGUI
 {
     /// <summary>
