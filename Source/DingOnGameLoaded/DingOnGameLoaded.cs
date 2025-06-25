@@ -23,11 +23,11 @@ public class DingOnGameLoaded : Mod
     {
         var soundName = "DingOnGameLoaded";
 
-        if (ErrorOccured && DingOnGameLoadedMod.instance.DingOnGameLoadedSettings.StartupErrors)
+        if (ErrorOccured && DingOnGameLoadedMod.Instance.DingOnGameLoadedSettings.StartupErrors)
         {
             soundName = "ErrorOnGameLoaded";
         }
-        else if (WarningOccured && DingOnGameLoadedMod.instance.DingOnGameLoadedSettings.StartupWarnings)
+        else if (WarningOccured && DingOnGameLoadedMod.Instance.DingOnGameLoadedSettings.StartupWarnings)
         {
             soundName = "WarningOnGameLoaded";
             Log.TryOpenLogWindow();
@@ -40,7 +40,6 @@ public class DingOnGameLoaded : Mod
             return;
         }
 
-        //Log.Message("[DingOnGameLoaded]: Playing sound");
         soundDef.PlayOneShot(SoundInfo.OnCamera());
         harmony.UnpatchAll("Mlie.DingOnGameLoaded");
     }

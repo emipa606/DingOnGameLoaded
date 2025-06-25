@@ -2,5 +2,13 @@
   "Continued": false,
   "CanAdd": "0",
   "CanRemove": "0",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "SocialImageSet": true,
+  "FundingSet": true,
+  "SearchTags": [
+    "loading",
+    " sound",
+    " background option"
+  ],
+  "LastXmlCleaning": "2025-06-25T21:35:39.9869232+02:00"
 }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DOGL.StartupWarning>Different sound on startup-warnings</DOGL.StartupWarning>
   <DOGL.StartupWarningInfo>Will play a different sound on warnings during startup, will also open the log to show them</DOGL.StartupWarningInfo>

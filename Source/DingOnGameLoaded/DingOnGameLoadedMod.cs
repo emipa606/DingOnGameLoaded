@@ -10,7 +10,7 @@ internal class DingOnGameLoadedMod : Mod
     /// <summary>
     ///     The instance of the dingOnGameLoadedSettings to be read by the mod
     /// </summary>
-    public static DingOnGameLoadedMod instance;
+    public static DingOnGameLoadedMod Instance;
 
     private static string currentVersion;
 
@@ -20,7 +20,7 @@ internal class DingOnGameLoadedMod : Mod
     /// <param name="content"></param>
     public DingOnGameLoadedMod(ModContentPack content) : base(content)
     {
-        instance = this;
+        Instance = this;
         DingOnGameLoadedSettings = GetSettings<DingOnGameLoadedSettings>();
         currentVersion =
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
@@ -47,22 +47,22 @@ internal class DingOnGameLoadedMod : Mod
     /// <param name="rect"></param>
     public override void DoSettingsWindowContents(Rect rect)
     {
-        var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(rect);
-        listing_Standard.Gap();
-        listing_Standard.CheckboxLabeled("DOGL.StartupWarning".Translate(),
+        var listingStandard = new Listing_Standard();
+        listingStandard.Begin(rect);
+        listingStandard.Gap();
+        listingStandard.CheckboxLabeled("DOGL.StartupWarning".Translate(),
             ref DingOnGameLoadedSettings.StartupWarnings,
             "DOGL.StartupWarningInfo".Translate());
-        listing_Standard.CheckboxLabeled("DOGL.StartupError".Translate(),
+        listingStandard.CheckboxLabeled("DOGL.StartupError".Translate(),
             ref DingOnGameLoadedSettings.StartupErrors, "DOGL.StartupErrorInfo".Translate());
         if (currentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("DOGL.CurrentModVersion".Translate(currentVersion));
+            listingStandard.Label("DOGL.CurrentModVersion".Translate(currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
     }
 }

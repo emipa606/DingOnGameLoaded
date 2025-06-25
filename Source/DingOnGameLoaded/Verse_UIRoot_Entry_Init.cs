@@ -10,21 +10,19 @@ public static class Verse_UIRoot_Entry_Init
     ///     This is the best place for games with the run in background is turned off.
     ///     It will however trigger the ding early for those who use Better Loading.
     /// </summary>
-    [HarmonyPostfix]
-    public static void Init()
+    public static void Postfix()
     {
         if (Prefs.RunInBackground)
         {
             return;
         }
 
-        if (ModLister.GetActiveModWithIdentifier("me.samboycoding.betterloading") != null)
+        if (ModLister.GetActiveModWithIdentifier("me.samboycoding.betterloading", true) != null)
         {
             Log.Message(
                 $"[DingOnGameLoaded]: {"DOGL.StartupInfo".Translate()}");
         }
 
-        //Log.Message("[DingOnGameLoaded]: Run in background is turned off");
         DingOnGameLoaded.PlayDing();
     }
 }
