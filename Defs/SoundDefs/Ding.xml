@@ -9,7 +9,7 @@
         <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Ding</clipPath>
+            <clipPath>DOGL_Ding</clipPath>
           </li>
         </grains>
         <volumeRange>
@@ -28,7 +28,7 @@
         <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Warning</clipPath>
+            <clipPath>DOGL_Warning</clipPath>
           </li>
         </grains>
         <volumeRange>
@@ -47,7 +47,7 @@
         <onCamera>True</onCamera>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>Error</clipPath>
+            <clipPath>DOGL_Error</clipPath>
           </li>
         </grains>
         <volumeRange>
